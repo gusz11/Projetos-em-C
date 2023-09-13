@@ -3,64 +3,50 @@
 
 // Código para traduzir um mês escrito de forma numérica para a forma gramática.
 
-int main(void)
-{
+int main(void){
     int mes;
 
-    printf("Insira um valor entre 1 e 12:\n");
     scanf("%d", &mes);
 
-    if (mes == 1)
-    {
-        printf("January");
-    }
-    else if (mes == 2)
-    {
-        printf("February");
-    }
-    else if (mes == 3)
-    {
-        printf("March");
-    }
-    else if (mes == 4)
-    {
-        printf("April");
-    }
-    else if (mes == 5)
-    {
-        printf("May");
-    }
-    else if (mes == 6)
-    {
-        printf("June");
-    }
-    else if (mes == 7)
-    {
-        printf("July");
-    }
-    else if (mes == 8)
-    {
-        printf("August");
-    }
-    else if (mes == 9)
-    {
-        printf("September");
-    }
-    else if (mes == 10)
-    {
-        printf("October");
-    }
-    else if (mes == 11)
-    {
-        printf("November");
-    }
-    else if (mes == 12)
-    {
-        printf("December");
-    }
-    else
-    {
-        printf("invalido.");
+    switch(mes){
+        case 1:
+        printf("January.\n");
+        break;
+        case 2:
+        printf("Feburary.\n");
+        break;
+        case 3:
+        printf("March.\n");
+        break;
+        case 4:
+        printf("April.\n");
+        break;
+        case 5:
+        printf("May.\n");
+        break; 
+        case 6:
+        printf("June.\n");
+        break;      
+        case 7:
+        printf("July.\n");
+        break;                                       
+        case 8:
+        printf("August.\n");
+        break;                                       
+        case 9:
+        printf("September.\n");
+        break;                                       
+        case 10:
+        printf("October.\n");
+        break;                                       
+        case 11:
+        printf("November.\n");
+        break;                                       
+        case 12:
+        printf("December.\n");
+        break;       
+        default:
+        printf("Mes invalido.\n");                                
     }
 
     return 0;
