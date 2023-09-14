@@ -1,24 +1,42 @@
 #include <stdio.h>
+#include <stdlib.h>
+
+// Código para descobrir a soma de impares consecutivos.
 
 int main(void)
 {
-    int numero1, numero2, resultado;
-    printf("Digite um valor");
-    scanf("%d", &numero1);
-    printf("Digite um valor");
-    scanf("%d", &numero2);
+    int valor1, valor2, maior, menor, soma;
+    soma = 0;
 
-    if (numero1 && numero2 % 2 != 0)
+    printf("Digite um 2 valores:\n");
+    scanf("%d", &valor1);
+    scanf("%d", &valor2);
+
+    if (valor1 > valor2)
     {
-        resultado = numero1 + numero2;
-        printf("%d\n", resultado);
+        maior = valor1;
+        menor = valor2;
     }
-    else if (numero1 % 2 != 0)
+    else if (valor2 > valor1)
     {
-        printf("%d\n", numero1);
+        maior = valor2;
+        menor = valor1;
     }
-    else if (numero2 % 2 != 0)
+    else
     {
-        printf("%d", numero2);
+        maior = valor1;
+        menor = valor2;
     }
+
+    for (int valorAtual = menor + 1; valorAtual < maior; valorAtual++)
+    {
+        // checando se valorAtual é ímpar
+        if (abs(valorAtual) % 2 == 1)
+        {
+            soma = soma + valorAtual;
+        }
+    }
+
+    printf("%d\n", soma);
+    return 0;
 }

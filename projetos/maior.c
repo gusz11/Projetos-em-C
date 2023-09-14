@@ -1,4 +1,7 @@
 #include <stdio.h>
+#include <stdlib.h>
+
+//Código para determinar qual é o maior valor digitado entre os 3.
 
 int main(void)
 {
@@ -12,20 +15,10 @@ int main(void)
     printf("Valor 3: ");
     scanf("%d", &valor3);
 
-    if (valor1 >= valor2 && valor1 >= valor3)
-    {
-        maior = valor1;
-    }
-    else if (valor2 >= valor1 && valor2 >= valor3)
-    {
-        maior = valor2;
-    }
-    else
-    {
-        maior = valor3;
-    }
+    maior = (valor1 + valor2 + abs(valor1 - valor2)) / 2;
+    maior = (maior + valor3 + abs(maior - valor3)) / 2;
 
-    printf("%d eh o maior.\n", maior);
+    printf("%d eh o maior\n", maior);
 
     return 0;
 }

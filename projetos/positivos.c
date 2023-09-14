@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+// Código que determina quantos dos 6 números digitados são posivos e qual a média deles.
+
 int main(void)
 {
     float numeros[6], positivos[6], media;

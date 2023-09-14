@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+// Código para descobrir a tabuada de um número.
+
 int main(void)
 {
     int resultado, valor;
@@ -21,5 +23,4 @@ int main(void)
     }
 
     return 0;
-    }
-    
+}

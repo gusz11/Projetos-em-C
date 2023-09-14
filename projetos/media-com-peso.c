@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <math.h>
 
+//Calculadora de média escolar, porém, com peso nas notas.
+
 int main(void)
 {
     float nota1, nota2, nota3, nota4, exame, resultado, recuperacao;

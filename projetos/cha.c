@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+//Código baseado em um jogo, o qual os participantes devem advinhar qual foi o chá escolhido pelo mestre.
+
 int main(void)
 {
     int cha, competidores[5];
