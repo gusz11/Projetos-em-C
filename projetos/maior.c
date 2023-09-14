@@ -1,7 +1,6 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-//Código para determinar qual é o maior valor digitado entre os 3.
+// Código para identificar o maior valor dentre 3 digitados.
 
 int main(void)
 {
